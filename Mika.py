@@ -14,7 +14,7 @@ pygame.display.set_icon(icon)
 background = pygame.image.load("background.png")
 def display_background():
     screen.blit(background,(0,0))
-# 
+
 scale = 0.2
 catImg = pygame.image.load("Mika.png")
 catImg = pygame.transform.scale(catImg,(catImg.get_width()*scale,catImg.get_height()*scale))
@@ -88,7 +88,7 @@ while running:
             if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
                 catx_change = 0
            
-    # cat 
+    
     if catx <= 0:
         catx = 0
     elif catx >= 716:
@@ -140,7 +140,7 @@ while running:
             humany[i] = random.randint(50,100)
             score_value += 1
 
-    # score
+    
     score_word = font.render("SCORE x " + str(score_value),True,(255,255,255))
     screen.blit(score_word,(10,10))
 
